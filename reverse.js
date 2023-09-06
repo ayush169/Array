@@ -37,10 +37,20 @@ const reverse4 = (arr) => {
   console.log(arr);
 };
 
+function revDisplay(arr, n = 0) {
+  if (n >= arr.length) {
+    return;
+  }
+  revDisplay(arr, n + 1);
+  console.log(arr[n]);
+}
+
 // console.log(arr);
 // reverse1(arr);
 // console.log(arr);
 // reverse2(arr);
 
-reverse4(arr);
-console.log(arr);
+// reverse4(arr);
+
+// console.log(arr);
+revDisplay(arr);
